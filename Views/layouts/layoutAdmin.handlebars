@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <meta content="" name="description" />
+   <meta content="Mosaddek" name="author" />
+   <link href="/Admin/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+   <link href="/Admin/assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+   <link href="/Admin/assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" />
+   <link href="/Admin/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+   <link href="/Admin/css/style.css" rel="stylesheet" />
+   <link href="/Admin/css/style-responsive.css" rel="stylesheet" />
+   <link href="/Admin/css/style-default.css" rel="stylesheet" id="style_color" />
+   <link href="/Admin/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+   <link href="/Admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+   
+    <title>Restaurant Admin</title>
+</head>
+<body class="fixed-top">    
+
+    {{>_NavmenuAdmin}}
+    <div id="container" class="row-fluid"></div>
+        {{>_LeftBarAdmin}}
+            <div id="main-content">
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div id="theme-change" class="hidden-phone">
+                                <i class="icon-cogs"></i>
+                                <span class="settings">
+                                    <span class="text">Theme Color:</span>
+                                    <span class="colors">
+                                        <span class="color-default" data-style="default"></span>
+                                        <span class="color-green" data-style="green"></span>
+                                        <span class="color-gray" data-style="gray"></span>
+                                        <span class="color-purple" data-style="purple"></span>
+                                        <span class="color-red" data-style="red"></span>
+                                    </span>
+                                </span>
+                            </div>
+                            <h3 class="page-title">
+                                Dashboard
+                            </h3>
+                            <ul class="breadcrumb">
+                                <li>
+                                    <a href="#">Home</a>
+                                    <span class="divider">/</span>
+                                </li>
+                                <li>
+                                    <a href="#">Metro Lab</a>
+                                    <span class="divider">/</span>
+                                </li>
+                                <li class="active">
+                                    Dashboard
+                                </li>
+                                <li class="pull-right search-wrap">
+                                    <form action="search_result.html" class="hidden-phone">
+                                        <div class="input-append search-input-area">
+                                            <input class="" id="appendedInputButton" type="text">
+                                            <button class="btn" type="button"><i class="icon-search"></i> </button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    {{{body}}}
+
+                </div>
+            </div>
+    </div>
+    {{>_FooterAdmin}}
+
+   <script src="/Admin/js/jquery-1.8.3.min.js"></script>
+   <script src="/Admin/js/jquery.nicescroll.js" type="text/javascript"></script>
+   <script type="text/javascript" src="/Admin/assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"></script>
+   <script type="text/javascript" src="/Admin/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+   <script src="/Admin/assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+   <script src="/Admin/assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="/Admin/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js" type="text/javascript"></script>
+   <script src="/Admin/js/jquery.sparkline.js" type="text/javascript"></script>
+   <script src="/Admin/assets/chart-master/Chart.js"></script>
+   <script src="/Admin/js/jquery.scrollTo.min.js"></script>
+   <script src="/Admin/js/common-scripts.js"></script>
+   <script src="/Admin/js/easy-pie-chart.js"></script>
+   <script src="/Admin/js/sparkline-chart.js"></script>
+   <script src="/Admin/js/home-page-calender.js"></script>
+   <script src="/Admin/js/home-chartjs.js"></script>
+</body>
+</html>
